@@ -113,14 +113,11 @@ body {
 }
 
 .header__content__maintext {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   margin-left: 111px;
   width: 50%;
   height: 100%;
   color: #ffffff;
-  z-index: 2;
+  z-index: 3;
 }
 
 .maintext__firststring {
