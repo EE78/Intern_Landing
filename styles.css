@@ -1,10 +1,11 @@
 body {
   width: auto;
-  margin: 0;
+  
 }
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 @font-face {
@@ -180,4 +181,142 @@ body {
 .company__logo {
   width: 140px;
   height: 40px;
+}
+
+.header__thirdcontent {
+  width: 100%;
+  height: 50%;
+  background-color: white;
+  margin: 0;
+  padding: 111px;
+}
+
+.thirdcontent__text {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  margin-bottom: 55px;
+}
+
+.thirdcontent__containers {
+  display: flex;
+  width: 100%;
+}
+
+.container__greenlable{
+  position: absolute;
+  width: 9px;
+  height: 100px;
+  background: linear-gradient(324.96deg, #2B8C6A 5.57%, #2B8C4F 104.26%);
+border-radius: 3px 0px 0px 3px;
+top: 20px;
+left: -9px;
+}
+
+.container__text {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 25px;
+}
+
+.thirdcontent__container__first {
+  background: #F2F2F2;
+border-radius: 3px;
+margin-right: 27px;
+margin-bottom: 27px;
+padding: 50px 87px 40px 40px;
+position: relative;
+width: 35%;
+}
+
+.container__first__sidetext {
+  color: rgba(33, 33, 33, 0.7);
+transform: rotate(-90deg);
+font-family: Helvetica;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  position: absolute;
+}
+
+.thirdcontent__container__second {
+  background: #F2F2F2;
+  border-radius: 3px;
+  margin-bottom: 27px;
+  padding: 50px 30px 40px 40px;
+  position: relative;
+  width: 65%;
+}
+
+.container__second__sidetext {
+  color: rgba(33, 33, 33, 0.7);
+transform: rotate(-90deg);
+font-family: Helvetica;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  position: absolute;
+}
+
+
+.thirdcontent__container__third {
+  background: #F2F2F2;
+  border-radius: 3px;
+  display: flex;
+  padding: 50px 30px 40px 40px;
+  position: relative;
+  width: 100%;
+}
+
+.container__third__sidetext {
+  color: rgba(33, 33, 33, 0.7);
+transform: rotate(-90deg);
+font-family: Helvetica;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  position: absolute;
+}
+
+
+.container__third__line {
+  margin-right: 50px;
+}
+
+.header__fourthcontent {
+  background: #FAFAFA;
+  width: 100%;
+  padding: 111px 111px 135px 111px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Helvetica;
+  font-style: normal;
+}
+
+.header__fourthcontent__number {
+  font-weight: 400;
+  font-size: 86px;
+  color: #2B8C6A;
+}
+
+.fourthcontent__text__text {
+  font-weight: normal;
+font-size: 20px;
+color: #646464;
+}
+
+.header__fifthcontent{
+  width: 100%;
+  padding: 111px;
+}
+
+.header__fifthcontent__text{
+  font-family: Helvetica;
+  font-style: normal;
+color: #212121;
+font-size: 48px;
 }
