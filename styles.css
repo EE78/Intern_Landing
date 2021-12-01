@@ -70,7 +70,7 @@ header {
       rgba(7, 9, 12, 0) 85.42%
     )
     no-repeat;
-  height: 85px;
+  /* height: 85px; */
   width: 100%;
 }
 
@@ -966,4 +966,255 @@ footer {
   line-height: 32px;
   color: rgba(33, 33, 33, 0.6);
   margin-right: 120px;
+}
+
+@media all and (max-width: 375px) {
+  
+  .first-container {
+    background-position: 85%;
+  }
+  
+  .first-container__gradient {
+    background: linear-gradient(
+      89.37deg,
+      #000000 15.49%,
+      rgba(0, 0, 0, 0.55) 48.34%
+    );
+  
+  }
+
+  header {
+    padding: 22px;
+    background: linear-gradient(
+        180deg,
+        rgba(5, 5, 5, 0.54) 18.75%,
+        rgba(7, 9, 12, 0) 85.42%
+      )
+      no-repeat;
+      align-items: unset;
+    font-size: 20px;
+  }
+
+  .menu-header {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .menu-header__item {
+    margin: 5px 0px;
+  }
+
+  .item__img {
+    display: none;
+  }
+
+  .first-section__sub-header {
+    padding: 22px;
+    flex-direction: column;
+  }
+  
+  .first-section__header {
+    font-size: 28px;
+    line-height: 18px;
+  }
+  
+  .first-section__description {
+    font-size: 56px;
+    line-height: 40px;
+    margin-top: 14px;
+  }
+  
+  .first-section__information {
+    font-size: 22px;
+    line-height: 33px;
+    margin-top: 20px;
+  }
+
+
+  .second-section__clients {
+    padding: 22px;
+  }
+  
+  
+  h1 {
+    font-size: 40px;
+    line-height: 36px;
+  }
+  
+  .logo-list {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-list__first-row {
+  flex-direction: column;
+  margin: 0;
+  }
+  
+  .logo-list__second-row {
+    flex-direction: column;
+  }
+  
+  .client__logo {
+    width: 140px;
+  height: 40px;
+  margin-top: 22px;
+  }
+
+  .third-section__we-offer {
+    padding: 22px;
+  
+  }
+  
+  .we-offer__cards {
+   flex-direction: column;
+   margin-top: 20px;
+  }
+  
+  .first-card__lines {
+    position: absolute;
+    left: 22px;
+    top: 105px;
+  }
+  
+  .second-card__lines {
+    left: 0px;
+    top: 135px;
+  }
+  
+  .card__text {
+    line-height: 22px;
+    font-size: 22px;
+  }
+  
+  .cards__first-card {
+    height: 331px;
+    margin: 0px;
+    padding: 10px 47px 10px 10px;
+    margin-bottom: 22px;
+    width: 100%;
+  }
+  
+  .first-card__side-label{
+    bottom: 30px;
+    left: 10px;
+  }
+  
+  .cards__second-card {
+    height: 331px;
+    margin: 0px;
+    padding: 10px 47px 10px 10px;
+    margin-bottom: 22px;
+    width: 100%;
+  }
+  
+  .second-card__side-label{
+    top: -130px;
+    right: -195px;
+  }
+  
+  .cards__third-card {
+    margin: 0px;
+    padding: 10px 47px 10px 10px;
+    flex-direction: column;
+  }
+  
+  .third-card__side-label{
+    bottom: 40px;
+    right: 0px;
+
+}
+
+.fourth-section__about-us {
+  padding: 22px;  
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-us__number {
+  font-size: 48px;
+  text-align: center;
+}
+
+.about-us__text {
+  text-align: center;
+}
+
+.fifth-section__our-projects {
+  
+  padding: 22px;
+
+}
+
+.our-projects__top-posters {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.top-posters__left-side {
+ 
+  padding: 10px 10px 30px 10px;
+  height: 315px;
+  background-size: cover;
+  background-position: 10% 30%;
+  margin-bottom: 20px;
+}
+
+
+
+.right-side__top-poster {
+  padding: 10px 10px 30px 10px;
+  height: 315px;
+  background-size: cover;
+  background-position: 10% 30%;
+}
+
+.right-side__middle-poster {
+  padding: 10px 10px 30px 10px;
+  height: 315px;
+  background-size: cover;
+  background-position: 10% 30%;
+}
+
+.top-posters__right-side {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+margin: 0;
+}
+
+.design__green-arrow {
+  size: 18px;
+  bottom: 21px;
+  right: 21px;
+}
+
+.our-projects__bottom-posters {
+  flex-direction: column;
+}
+
+.bottom-posters__left-side {
+  padding: 10px 10px 30px 10px;
+  height: 315px;
+  background-size: cover;
+  background-position: 10% 30%;
+  width: 100%;
+  
+}
+
+.bottom-posters__green-poster {
+  padding: 10px 10px 30px 10px;
+  height: 155px;
+  background-size: cover;
+  background-position: 10% 30%;
+  width: 100%;
+  margin-top: 20px;
+  justify-content: center;
+}
 }
