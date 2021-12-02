@@ -185,7 +185,7 @@ h1 {
   margin: 0;
 }
 
-.we-offer__cards {
+.we-offer__first-row {
   display: flex;
   width: 100%;
   margin-top: 55px;
@@ -211,6 +211,7 @@ h1 {
   position: absolute;
   left: 0px;
   top: 235px;
+  z-index: 0;
 }
 
 .card__text {
@@ -230,14 +231,23 @@ h1 {
   color: #2b8c4f;
 }
 
-.cards__first-card {
+.first-row__first-card {
   background: #f2f2f2;
   border-radius: 3px;
   height: 431px;
   margin-right: 27px;
-  padding: 50px 87px 40px 40px;
   position: relative;
   width: 35%;
+}
+
+.first-card__content{
+  position: absolute;
+  padding: 50px 87px 40px 40px;
+  top: 0px;
+  overflow: hidden;
+  width: 100%;
+  left: 0;
+  height: 100%;
 }
 
 .first-card__side-label {
@@ -251,13 +261,25 @@ h1 {
   left: 40px;
 }
 
-.cards__second-card {
+.first-row__second-card {
   background: #f2f2f2;
   border-radius: 3px;
-  padding: 50px 30px 40px 40px;
+  height: 431px;
+  margin-right: 27px;
+  padding: 50px 87px 40px 40px;
   position: relative;
   width: 65%;
-  z-index: 555;
+  margin: 0;
+}
+
+.second-card__content {
+  padding: 50px 87px 40px 40px;
+  position: absolute;
+  top: 0px;
+  overflow: hidden;
+  width: 100%;
+  left: 0;
+  height: 100%;
 }
 
 .second-card__side-label {
@@ -271,7 +293,7 @@ h1 {
   right: 30px;
 }
 
-.cards__third-card {
+.second-row__third-card {
   background: #f2f2f2;
   border-radius: 3px;
   display: flex;
@@ -313,7 +335,7 @@ h1 {
   right: -45px;
 }
 
-.third-card__fields {
+.third-card__content {
   margin-right: 50px;
   width: 60%;
 }
@@ -697,11 +719,6 @@ h1 {
   padding: 70px 185px 165px 111px;
 }
 
-.soft__logo {
-  width: 240px;
-  height: 57px;
-}
-
 .ninth-section__offer {
   padding: 111px 111px 160px 111px;
   width: 100%;
@@ -990,7 +1007,7 @@ footer {
   }
 
   header {
-    padding: 22px;
+    padding: 30px;
     background: linear-gradient(
         180deg,
         rgba(5, 5, 5, 0.54) 18.75%,
@@ -1015,7 +1032,7 @@ footer {
   }
 
   .first-section__sub-header {
-    padding: 22px;
+    padding: 30px;
     flex-direction: column;
   }
 
@@ -1037,7 +1054,7 @@ footer {
   }
 
   .second-section__clients {
-    padding: 22px;
+    padding: 30px;
   }
 
   h1 {
@@ -1062,74 +1079,101 @@ footer {
   }
 
   .client__logo {
-    width: 140px;
+    width: 100px;
     height: 40px;
     margin-top: 22px;
   }
 
   .third-section__we-offer {
-    padding: 22px;
+    padding: 30px;
   }
-
-  .we-offer__cards {
+  
+  .we-offer__first-row {
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 25px;
   }
 
   .first-card__lines {
-    left: 22px;
-    top: 105px;
+    top: 5px;
+    left: 25px;
   }
-
+  
   .second-card__lines {
-    left: 0px;
-    top: 135px;
+    top: 35px;
+    left: 0;
   }
-
+  
   .card__text {
-    line-height: 22px;
-    font-size: 22px;
+    line-height: 23px;
+    font-weight: 700;
+    font-size: 18px;
   }
-
-  .cards__first-card {
-    height: 331px;
+  
+  .first-row__first-card {
+    height: 231px;
     margin: 0px;
-    padding: 10px 47px 10px 10px;
-    margin-bottom: 22px;
     width: 100%;
   }
-
+  
+  .first-card__content{
+    padding: 10px;
+  }
+  
   .first-card__side-label {
+    left: -10px;
     bottom: 30px;
-    left: 10px;
   }
-
-  .cards__second-card {
-    height: 331px;
-    margin: 0px;
-    padding: 10px 47px 10px 10px;
-    margin-bottom: 22px;
+  
+  .first-row__second-card {
+    height: 231px;
+    margin-top: 20px;
     width: 100%;
   }
-
-  .second-card__side-label {
-    top: -130px;
-    right: -195px;
+  
+  .second-card__content {
+    padding: 10px;
   }
-
-  .cards__third-card {
-    margin: 0px;
-    padding: 10px 47px 10px 10px;
+  
+  .second-card__side-label {
+    right: -30px;
+    bottom: 50px;
+  }
+  
+  .second-row__third-card {
+    height: 281px;
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
     flex-direction: column;
   }
-
+  
   .third-card__side-label {
     bottom: 40px;
-    right: 0px;
+    right: -20px;
   }
+  
+  .third-card-lines {
+    position: absolute;
+    top: 0px;
+    overflow: hidden;
+    width: 100%;
+    left: 0;
+    height: 100%;
+  }
+  
+  .left-lines {
+    height: 100%;
+    left: 10px;
+  }
+  
+  .right-lines {
+    top: 20px;
+  }
+  
 
   .fourth-section__about-us {
-    padding: 22px;
+    padding: 30px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -1145,11 +1189,11 @@ footer {
   }
 
   .fifth-section__our-projects {
-    padding: 22px;
+    padding: 30px;
   }
 
   .our-projects__top-posters {
-    margin-top: 22px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -1186,9 +1230,9 @@ footer {
   }
 
   .design__green-arrow {
-    size: 18px;
-    bottom: 21px;
-    right: 21px;
+    size: 14px;
+    bottom: 10px;
+    right: 15px;
   }
 
   .our-projects__bottom-posters {
@@ -1217,7 +1261,7 @@ footer {
     width: 100%;
     height: 100%;
     background: #fafafa;
-    padding: 22px;
+    padding: 30px;
     position: relative;
   }
 
@@ -1232,19 +1276,21 @@ footer {
   }
 
   .main-content__text {
-    font-size: 26px;
-    line-height: 34px;
+    font-size: 22px;
+    line-height: 30px;
     margin-bottom: 30px;
     text-align: center;
   }
 
   .main-content__name {
     text-align: center;
+    font-size: 16px;
   }
 
   .main-content__post {
     text-align: center;
     margin-bottom: 20px;
+    font-size: 16px;
   }
 
   .main-content__photo {
@@ -1252,7 +1298,7 @@ footer {
   }
 
   .section__carousel {
-    margin-top: 30px;
+    margin-top: 40px;
   }
 
   .sixth-section__green-window {
@@ -1262,23 +1308,24 @@ footer {
     margin-top: 30px;
     padding: 10px 20px 10px 20px;
     align-items: center;
+    margin-bottom: 30px;
   }
 
   .green-window__question {
-    font-size: 28px;
+    font-size: 22px;
     text-align: center;
   }
 
   .green-window__description {
     text-align: center;
-    font-size: 22px;
+    font-size: 18px;
     margin-bottom: 15px;
   }
 
   .seventh-section__solutions {
     height: 100%;
     width: 100%;
-    padding: 22px;
+    padding: 30px;
   }
 
   .solutions-cards {
@@ -1287,7 +1334,7 @@ footer {
   }
 
   .left-card {
-    padding: 0px 20px 10px 20px;
+    padding: 30px;
     width: 100%;
     background-position: center;
     height: 300px;
@@ -1296,14 +1343,14 @@ footer {
   .middle-card {
     background-position: center;
     margin: 20px 0 20px 0;
-    padding: 0px 20px 10px 20px;
+    padding: 30px;
     width: 100%;
     height: 300px;
   }
 
   .right-card {
     background-position: center;
-    padding: 0px 20px 10px 20px;
+    padding: 30px;
     width: 100%;
     height: 300px;
   }
@@ -1311,20 +1358,15 @@ footer {
   .eigths-section__awards {
     height: 100%;
     width: 100%;
-    padding: 22px;
+    padding: 30px;
   }
 
   .logo-list {
     margin-top: 30px;
   }
 
-  .soft__logo {
-    width: 140px;
-    height: 40px;
-  }
-
   .ninth-section__offer {
-    padding: 22px;
+    padding: 30px;
     width: 100%;
     height: 100%;
     flex-direction: column;
@@ -1336,8 +1378,8 @@ footer {
   }
 
   .text__tell-us {
-    margin-bottom: 22px;
-    font-size: 28px;
+    margin-bottom: 30px;
+    font-size: 18px;
     text-align: center;
   }
 
@@ -1347,53 +1389,53 @@ footer {
   }
 
   .phone__call-us {
-    margin-bottom: 15px;
-    font-size: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
     text-align: center;
   }
 
   .text__countries {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .countries__phone {
-    font-size: 20px;
-    margin-bottom: 15px;
+    font-size: 16px;
+    margin-bottom: 20px;
   }
 
   .contacts__phone {
     flex-direction: column;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
   .contacts__email {
-    margin-top: 15px;
+    margin-top: 20px;
     margin: 0;
   }
 
   .countries-email {
-    font-size: 20px;
-  }
-
-  .form__action {
-    font-size: 22px;
-    margin-bottom: 15px;
-  }
-
-  .item__name {
-    font-size: 18px;
-  }
-
-  .item__last-name {
-    font-size: 18px;
-  }
-
-  .item__space {
     font-size: 16px;
   }
 
+  .form__action {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .item__name {
+    font-size: 16px;
+  }
+
+  .item__last-name {
+    font-size: 16px;
+  }
+
+  .item__space {
+    font-size: 14px;
+  }
+
   footer {
-    padding: 22px;
+    padding: 30px;
     flex-direction: column;
   }
 
@@ -1403,7 +1445,7 @@ footer {
   }
 
   .left-info__logo {
-    margin-bottom: 24px;
+    margin-bottom: 30px;
   }
 
   .left-info__networks {
@@ -1413,17 +1455,17 @@ footer {
   }
 
   .logos__social {
-    margin-right: 15px;
-    margin-bottom: 15px;
+    margin-right: 20px;
+    margin-bottom: 20px;
   }
 
   .last-logos__social {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
   .networks__years {
-    bottom: 22px;
-    left: 22px;
+    bottom: 25px;
+    left: 25px;
   }
 
   .footer__left-info {
@@ -1438,34 +1480,38 @@ footer {
     width: 100%;
     height: 100%;
     justify-content: space-between;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .right-menu__element {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-top: 20px;
+    flex-direction: column;
   }
 
   .right-menu__bottom-element {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    flex-direction: column;
+    text-align: end;
   }
 
   .element__first-name {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .element__projects {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .element__contacts {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .name__name-item {
-    font-size: 16px;
+    font-size: 14px;
+    margin-bottom: 20px;
   }
 }
