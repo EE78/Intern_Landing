@@ -716,7 +716,6 @@ h1 {
 }
 
 .card-text {
-  position: absolute;
   z-index: 5;
   font-weight: 500;
   font-size: 22px;
@@ -726,11 +725,9 @@ h1 {
 }
 
 .card-info {
-  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
   z-index: 4;
   font-size: 20px;
   line-height: 20px;
