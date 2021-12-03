@@ -189,7 +189,7 @@ h1 {
   display: flex;
   width: 100%;
   margin-top: 55px;
-  height: 413px;
+  height: 100%;
 }
 
 .card__green-lable {
@@ -367,7 +367,7 @@ h1 {
 .top-posters__left-side {
   position: relative;
   background: url("img/image\ 158.png") no-repeat;
-  background-position: center;
+  background-position: 70% 25%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -375,6 +375,10 @@ h1 {
   padding: 40px 40px 100px 40px;
   height: 629px;
   cursor: pointer;
+}
+
+.top-posters__left-side:hover{
+  opacity: 0.8;
 }
 
 .poster__design {
@@ -446,6 +450,10 @@ h1 {
   cursor: pointer;
 }
 
+.right-side__top-poster:hover{
+  opacity: 0.8;
+}
+
 .right-side__middle-poster {
   position: relative;
   background: url("img/image\ 159.png") no-repeat;
@@ -459,6 +467,11 @@ h1 {
   margin-top: 25px;
   cursor: pointer;
 }
+
+.right-side__middle-poster:hover{
+  opacity: 0.8;
+}
+
 
 .top-posters__right-side {
   display: flex;
@@ -487,6 +500,11 @@ h1 {
   cursor: pointer;
 }
 
+.bottom-posters__left-side:hover{
+  opacity: 0.8;
+}
+
+
 .bottom-posters__green-poster {
   height: 302px;
   position: relative;
@@ -504,6 +522,11 @@ h1 {
   width: 30%;
   cursor: pointer;
 }
+
+.bottom-posters__green-poster:hover{
+  opacity: 0.8;
+}
+
 
 .sixth-section__interview {
   width: 100%;
@@ -758,7 +781,7 @@ h1 {
   line-height: 26px;
   color: #212121;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
 }
 
 .text__countries {
@@ -787,6 +810,9 @@ h1 {
 
 .contacts__email {
   margin-left: 83px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .countries-email {
@@ -846,6 +872,7 @@ h1 {
   border-bottom: 1px solid #c4c4c4;
   width: 100%;
   padding-bottom: 9px;
+  outline: none;
 }
 
 .form__feedback {
@@ -1097,6 +1124,7 @@ footer {
   h1 {
     font-size: 26px;
     line-height: 36px;
+    font-weight: 500;
   }
 
   .logo-list {
@@ -1128,6 +1156,7 @@ footer {
   .we-offer__first-row {
     flex-direction: column;
     margin-top: 25px;
+    height: 100%;
   }
 
   .first-card__lines {
@@ -1151,7 +1180,6 @@ footer {
   }
 
   .first-row__first-card {
-    height: 231px;
     margin: 0px;
     width: 100%;
   }
@@ -1171,7 +1199,6 @@ footer {
   }
 
   .first-row__second-card {
-    height: 231px;
     margin-top: 20px;
     width: 100%;
     margin-left: 0;
@@ -1213,10 +1240,7 @@ footer {
     z-index: 1;
   }
 
-  .third-card__right-lines {
-    top: 20px;
-  }
-
+  
   .fourth-section__about-us {
     padding: 30px;
     flex-direction: column;
@@ -1226,11 +1250,18 @@ footer {
 
   .about-us__element {
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .about-us__number {
     font-size: 32px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
   }
 
   .about-us__text {
@@ -1454,6 +1485,12 @@ footer {
     justify-content: space-around;
   }
 
+.phone__wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
   .phone__call-us {
     margin-bottom: 20px;
     font-size: 16px;
@@ -1476,6 +1513,9 @@ footer {
   }
 
   .contacts__email {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     margin-top: 20px;
     margin: 0;
   }
