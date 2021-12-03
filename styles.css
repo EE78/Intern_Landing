@@ -252,7 +252,6 @@ h1 {
   transform: rotate(-90deg);
   position: absolute;
   bottom: 60px;
-  left: 20px;
 }
 
 .first-row__second-card {
@@ -377,7 +376,7 @@ h1 {
   cursor: pointer;
 }
 
-.top-posters__left-side:hover{
+.top-posters__left-side:hover {
   opacity: 0.8;
 }
 
@@ -450,7 +449,7 @@ h1 {
   cursor: pointer;
 }
 
-.right-side__top-poster:hover{
+.right-side__top-poster:hover {
   opacity: 0.8;
 }
 
@@ -468,10 +467,9 @@ h1 {
   cursor: pointer;
 }
 
-.right-side__middle-poster:hover{
+.right-side__middle-poster:hover {
   opacity: 0.8;
 }
-
 
 .top-posters__right-side {
   display: flex;
@@ -500,10 +498,9 @@ h1 {
   cursor: pointer;
 }
 
-.bottom-posters__left-side:hover{
+.bottom-posters__left-side:hover {
   opacity: 0.8;
 }
-
 
 .bottom-posters__green-poster {
   height: 302px;
@@ -523,10 +520,9 @@ h1 {
   cursor: pointer;
 }
 
-.bottom-posters__green-poster:hover{
+.bottom-posters__green-poster:hover {
   opacity: 0.8;
 }
-
 
 .sixth-section__interview {
   width: 100%;
@@ -1160,10 +1156,10 @@ footer {
   }
 
   .first-card__lines {
-    width: 100%;
     overflow: hidden;
+    right: 0;
+    bottom: 0;
     top: 0;
-    left: 5px;
   }
 
   .second-card__lines {
@@ -1194,7 +1190,7 @@ footer {
   }
 
   .first-card__side-label {
-    left: 250px;
+    right: 0;
     bottom: 30px;
   }
 
@@ -1237,10 +1233,9 @@ footer {
   .third-card__left-lines {
     height: 100%;
     left: 10px;
-    z-index: 1;
+    z-index: 0;
   }
 
-  
   .fourth-section__about-us {
     padding: 30px;
     flex-direction: column;
@@ -1485,11 +1480,11 @@ footer {
     justify-content: space-around;
   }
 
-.phone__wrapper{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
+  .phone__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
   .phone__call-us {
     margin-bottom: 20px;
